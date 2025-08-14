@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tower Hill Capital Partners - Alternative Investment Management</title>
+  <meta name="description" content="Tower Hill Capital Partners is an alternative investment management firm.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" href="assets/logo.jpeg" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img src="assets/logo.jpeg" alt="Tower Hill Capital Partners logo">
+        <span class="name">Tower Hill Capital Partners</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div id="menuToggle" aria-label="Menu" role="button">☰</div>
+      <div id="mobileMenu" class="mobile">
+        <a href="#about">About</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container wrap">
+        <div>
+          <h1>Alternative investment management</h1>
+          <p>Institutional focus. Flexible capital. Partnership mindset.</p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">Contact us</a>
+            <a class="btn ghost" href="#about">Learn more</a>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="n">Institutional</div><div>Investor focus</div></div>
+            <div class="kpi"><div class="n">Opportunistic</div><div>Across cycles</div></div>
+            <div class="kpi"><div class="n">Aligned</div><div>With partners</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/logo.jpeg" alt="Tower Hill Capital Partners leaf" style="width:100%;height:auto;display:block;opacity:.95">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>About</h2>
+          <p class="lead">Tower Hill Capital Partners is an alternative investment management firm focused on durable, risk-adjusted returns.</p>
+          <ul class="list">
+            <li>Research driven approach and disciplined underwriting</li>
+            <li>Flexible mandate across capital structures and asset types</li>
+            <li>Hands-on partnership with management teams and sponsors</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Focus</h3>
+          <ul class="list">
+            <li>Private credit and special situations</li>
+            <li>Real assets and asset-backed strategies</li>
+            <li>Select structured equity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="strategy" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2>Strategy</h2>
+          <p class="lead">We target opportunities where deep sourcing, speed, and structuring create an edge.</p>
+          <ul class="list">
+            <li>Downside protection first, upside by design</li>
+            <li>Active risk management and portfolio monitoring</li>
+            <li>Aligned incentives with our partners and investors</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">What we look for</h3>
+          <ul class="list">
+            <li>Clear catalysts and resilient cash flows</li>
+            <li>Strong counterparties and governance</li>
+            <li>Attractive basis and structural protections</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">For opportunities or inquiries, email us.</p>
+          <p><a class="btn primary" href="mailto:info@towerhillcapitalpartners.com">info@towerhillcapitalpartners.com</a></p>
+          <p style="font-size:14px; color:#6a737d;">Please do not send material non-public information.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Legal</h3>
+          <p style="margin:0">This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities or investment products. Any such offer will be made only to qualified investors by confidential offering documents.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="y"></span> Tower Hill Capital Partners. All rights reserved. · <a href="#contact">Contact</a></small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
