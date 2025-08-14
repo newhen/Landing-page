@@ -1,123 +1,133 @@
-<!doctype html>
+As an AI, I cannot generate downloadable files like a .zip archive. My capabilities are limited to providing you with text and code.
+However, I can give you something even better for a one-click deployment: a single, self-contained index.html file. This file includes all the HTML, CSS, and even the logo (as an embedded SVG), so you only need to create and upload one file.
+This makes the process incredibly simple.
+Instructions
+ * Create One File: On your computer, create a new file named index.html.
+ * Copy & Paste: Copy the entire block of code below and paste it into the index.html file you just created.
+ * Upload to GitHub: Create a new GitHub repository and upload this single index.html file.
+ * Deploy: In your repository's Settings, go to the Pages tab and enable GitHub Pages by selecting your main branch as the source.
+Your professional, single-file landing page will be live in minutes.
+index.html (Complete Code)
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tower Hill Capital Partners - Alternative Investment Management</title>
-  <meta name="description" content="Tower Hill Capital Partners is an alternative investment management firm.">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preload" href="assets/logo.jpeg" as="image">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Hill Capital Partners LP</title>
+    <meta name="description" content="Tower Hill Capital Partners LP is an alternative investment management firm.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS is embedded directly in the HTML file */
+
+        /* General Body Styles */
+        body {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Main Centered Container */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        /* Logo Styling */
+        .logo-container {
+            margin-bottom: 2rem;
+        }
+
+        .logo-svg {
+            width: 70px; /* Size of the maple leaf */
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .logo-text-main {
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: #0f4d3a; /* Dark Green */
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .logo-text-sub {
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            color: #0f4d3a; /* Dark Green */
+            margin: 8px 0 0 0;
+            text-transform: uppercase;
+        }
+
+        /* Description Text */
+        .description {
+            font-size: 1.1rem;
+            color: #555;
+            letter-spacing: 0.5px;
+            margin: 0 0 1rem 0;
+        }
+
+        /* Contact Link */
+        .contact a {
+            font-size: 1rem;
+            color: #0f4d3a; /* Dark Green from Logo */
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .contact a:hover {
+            border-bottom: 1px solid #0f4d3a;
+        }
+
+        /* Footer Styling */
+        footer {
+            width: 100%;
+            padding: 1.5rem 0;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#top">
-        <img src="assets/logo.jpeg" alt="Tower Hill Capital Partners logo">
-        <span class="name">Tower Hill Capital Partners</span>
-      </a>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#strategy">Strategy</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div id="menuToggle" aria-label="Menu" role="button">☰</div>
-      <div id="mobileMenu" class="mobile">
-        <a href="#about">About</a>
-        <a href="#strategy">Strategy</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container wrap">
-        <div>
-          <h1>Alternative investment management</h1>
-          <p>Institutional focus. Flexible capital. Partnership mindset.</p>
-          <div class="cta">
-            <a class="btn primary" href="#contact">Contact us</a>
-            <a class="btn ghost" href="#about">Learn more</a>
-          </div>
-          <div class="kpis">
-            <div class="kpi"><div class="n">Institutional</div><div>Investor focus</div></div>
-            <div class="kpi"><div class="n">Opportunistic</div><div>Across cycles</div></div>
-            <div class="kpi"><div class="n">Aligned</div><div>With partners</div></div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/logo.jpeg" alt="Tower Hill Capital Partners leaf" style="width:100%;height:auto;display:block;opacity:.95">
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container grid-2">
-        <div>
-          <h2>About</h2>
-          <p class="lead">Tower Hill Capital Partners is an alternative investment management firm focused on durable, risk-adjusted returns.</p>
-          <ul class="list">
-            <li>Research driven approach and disciplined underwriting</li>
-            <li>Flexible mandate across capital structures and asset types</li>
-            <li>Hands-on partnership with management teams and sponsors</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">Focus</h3>
-          <ul class="list">
-            <li>Private credit and special situations</li>
-            <li>Real assets and asset-backed strategies</li>
-            <li>Select structured equity</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="strategy" class="section alt">
-      <div class="container grid-2">
-        <div>
-          <h2>Strategy</h2>
-          <p class="lead">We target opportunities where deep sourcing, speed, and structuring create an edge.</p>
-          <ul class="list">
-            <li>Downside protection first, upside by design</li>
-            <li>Active risk management and portfolio monitoring</li>
-            <li>Aligned incentives with our partners and investors</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">What we look for</h3>
-          <ul class="list">
-            <li>Clear catalysts and resilient cash flows</li>
-            <li>Strong counterparties and governance</li>
-            <li>Attractive basis and structural protections</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container grid-2">
-        <div>
-          <h2>Contact</h2>
-          <p class="lead">For opportunities or inquiries, email us.</p>
-          <p><a class="btn primary" href="mailto:info@towerhillcapitalpartners.com">info@towerhillcapitalpartners.com</a></p>
-          <p style="font-size:14px; color:#6a737d;">Please do not send material non-public information.</p>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">Legal</h3>
-          <p style="margin:0">This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities or investment products. Any such offer will be made only to qualified investors by confidential offering documents.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
     <div class="container">
-      <small>© <span id="y"></span> Tower Hill Capital Partners. All rights reserved. · <a href="#contact">Contact</a></small>
+        <header class="logo-container">
+            <svg class="logo-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#0f4d3a">
+                <path d="M463.951 82.342c-23.971-33.006-65.056-42.5-98.062-18.529-19.789 14.363-34.522 36.853-40.355 60.826-3.872-24.895-17.84-48.406-38.203-62.825-32.55-23.08-76.862-11.45-99.941 21.099-13.834 19.51-19.103 44.566-15.343 68.996l-102.59 78.411c-13.578-2.612-27.698 1.44-38.653 10.9-15.536 13.38-19.894 36.43-10.051 54.433 9.844 18.003 32.894 22.362 50.897 12.518l-7.785 13.486c-13.784 23.874-14.928 52.88 4.309 82.593l51.583-29.781c-1.282-12.723 3.619-25.59 13.419-33.882 13.914-11.758 33.723-11.758 47.637 0 9.799 8.292 14.701 21.159 13.419 33.882l51.583 29.781c19.237-29.712 18.093-58.718-4.309-82.593l-7.785-13.486c18.003 9.844 41.053 5.485 50.897-12.518 9.844-18.003 5.485-41.053-10.051-54.433-10.955-9.459-25.075-13.512-38.653-10.9l-102.59-78.411c5.968-30.732.339-64.24-21.11-86.69-14.789-15.485-35.836-21.848-55.827-16.324-17.536-12.28-40.169-14.996-60.835-7.785 24.316 43.141 69.172 113.102 119.539 163.468v149.338h32V340.543c50.367-50.366 95.223-120.327 119.539-163.468-17.587-8.312-39.29-10.518-59.049-5.186-21.493 5.76-40.402 19.866-51.48 38.663 5.751-24.965.348-52.071-19.23-71.65-22.302-22.302-57.954-26.699-85.345-12.428-18.056 9.407-31.564 26.79-37.49 46.544l76.326 58.337c15.536-13.38 38.587-17.739 56.589-7.896 18.003 9.844 22.362 32.894 12.518 50.897-9.844 18.003-32.894 22.362-50.897 12.518-9.013-4.918-14.896-14.242-16.79-24.628l-87.359 66.804c8.412 18.17 26.216 29.626 46.208 29.626 10.153 0 20.12-2.775 28.59-8.106l-46.772 80.999h32l46.772-81c9.931 5.434 21.037 8.293 32.41 8.293s22.479-2.859 32.41-8.293l46.772 81h32l-46.772-81.001c8.47-5.331 18.437-8.106 28.59-8.106 19.992 0 37.796-11.456 46.208-29.626l-87.359-66.804c-1.895 10.386-7.777 19.71-16.79 24.628-18.003 9.844-41.053 5.485-50.897-12.518-9.844-18.003-5.485-41.053 12.518-50.897 18.003-9.844 41.053-5.485 50.897 12.518 5.918 10.835 5.518 23.755-.38 34.254l76.326-58.337c-1.129-23.948-11.41-46.774-28.59-62.825-25.548-24.032-64.887-28.847-95.918-11.332-28.989-16.14-65.656-11.536-89.927 12.46z"/>
+            </svg>
+            <h1 class="logo-text-main">Tower Hill</h1>
+            <h2 class="logo-text-sub">Capital Partners LP</h2>
+        </header>
+
+        <main>
+            <p class="description">
+                Alternative Investment Management
+            </p>
+            <p class="contact">
+                <a href="mailto:info@towerhillcapitalpartners.com">info@towerhillcapitalpartners.com</a>
+            </p>
+        </main>
     </div>
-  </footer>
-  <script src="script.js"></script>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+    <footer>
+        <p>&copy; 2025 Tower Hill Capital Partners LP. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
+
+
