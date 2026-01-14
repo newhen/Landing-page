@@ -48,8 +48,8 @@ body {
 
 .company-name {
     font-family: var(--font-main); /* Ensure consistent font */
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 600; /* Restored some weight for hierarchy */
+    font-size: 1.6rem; /* Increased from 1.2rem for visibility */
     color: var(--link-color); /* Dark green */
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -61,7 +61,7 @@ body {
 
 .company-sub {
     font-weight: 400;
-    font-size: .9rem;
+    font-size: 0.95rem; /* Slight bump for readability */
     letter-spacing: 1px;
     color: var(--text-color);
     margin-top: 5px;
@@ -69,8 +69,8 @@ body {
 
 .tagline {
     font-weight: 300;
-    font-size: .5rem;
-    letter-spacing: 1px;
+    font-size: 0.8rem; /* 0.5rem was too small, 0.8rem is subtle but legible */
+    letter-spacing: 2px;
     color: var(--accent-color);
     text-transform: uppercase;
     margin-top: 1rem;
