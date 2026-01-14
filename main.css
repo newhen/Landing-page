@@ -1,0 +1,205 @@
+:root {
+    --bg-color: #FDFDFD;
+    --text-color: #333333;
+    --accent-color: #666666;
+    --link-color: #1A3C34; /* Dark Green from logo */
+    --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    height: 100vh;
+    display: flex; /* Ensure full height layout */
+    flex-direction: column;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.center-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    max-width: 120px; /* Smaller icon size */
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.company-name {
+    font-family: var(--font-main); /* Ensure consistent font */
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--link-color); /* Dark green */
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.company-sub {
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+.tagline {
+    font-weight: 300;
+    font-size: .5rem;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.page-title {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.email-link {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--link-color);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.email-link:hover {
+    border-bottom-color: var(--link-color);
+}
+
+.address {
+    font-style: normal;
+    color: var(--accent-color);
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto; /* Push to bottom */
+}
+
+.footer-nav {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+}
+
+.footer-nav a:hover {
+    color: var(--text-color);
+}
+
+.separator {
+    color: #ccc;
+    margin: 0 0.5rem;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: #999;
+    font-weight: 300;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Slight rounded corner for softness */
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--link-color);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--link-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-weight: 500; /* Slightly bolder text */
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #122C24;
+    opacity: 0.9;
+}
+
+.contact-info-footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.contact-info-footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
